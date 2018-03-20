@@ -21,7 +21,7 @@ form1=abc.replace('id=','')
 id_form = form1.replace('"','')
 #c.post('http://test.kpoint.com/user/login',data={'kpointemail':'siteadmin', 'pass':'kPoint@123','name':' ','form_build_id':id_form,'form_id':'user_login','op':'Sign in'})
 try:
-	c.post('https://gslab.kpoint.com/user/login#',data={'kpointuserid':'siteadmin', 'pass':'@bh!J3eT','name':' ','form_build_id':id_form,'form_id':'user_login','op':'Sign in'})
+	c.post('https://gslab.kpoint.com/user/login#',data={'kpointuserid':'USER_NAME', 'pass':'PASS','name':' ','form_build_id':id_form,'form_id':'user_login','op':'Sign in'})
 except Exception as e:
 	print("Unexpected error:", e)
 
